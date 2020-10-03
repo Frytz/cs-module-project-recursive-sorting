@@ -85,3 +85,15 @@ def merge_sort_in_place(arr, l, r):
         merge_sort_in_place(arr, m + 1, r)
         merge_in_place(arr, l, m, r)
 
+def printArray(a, size):
+
+    for i in range(size):
+        print(A[i], end= "")
+    print()
+
+if __name__ == '__main__':
+    arr = [1, 5, 3, 2, 4]
+    arr_size = len(arr)
+
+    merge_sort_in_place(arr, 0, arr_size - 1)
+    print(arr, arr_size)
